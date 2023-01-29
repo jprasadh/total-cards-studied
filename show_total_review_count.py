@@ -25,7 +25,6 @@ def generateStats():
 	styling = f"""
 "font-family: {getUserOption('fontfamily')};
 font-size: {getUserOption('fontsize')};
-color: {getUserOption('color')};
 """
 	if getUserOption('bold'):
 		styling += " font-weight: bold;"
