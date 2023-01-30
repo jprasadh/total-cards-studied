@@ -25,9 +25,16 @@ def generateStats():
 	styling = f"""
 "font-family: {getUserOption('fontfamily')};
 font-size: {getUserOption('fontsize')};
+color: {getUserOption('color')};
 """
 	if getUserOption('bold'):
 		styling += " font-weight: bold;"
+		
+	if not getUserOption('custom_text_styling'):
+		styling = f"""
+			"
+			"""
+
 
 	styling += '"'
 	sep = getUserOption('thousand_separator')
